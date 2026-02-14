@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card" onclick="openLetter()">
+            <div class="front">
+                <h1>To My Love</h1>
+                <p class="hint">(Tap to open)</p>
+            </div>
+            <div class="back">
+                <div class="letter-content">
+                    <h2>Dearest [Name],</h2>
+                    <p>
+                        Write your heartfelt message here. You can use <br> tags 
+                        to break lines. Tell them how much they mean to you.
+                    </p>
+                    <p>
+                        "Quote or lyric that fits your relationship."
+                    </p>
+                    <p class="signature">Yours,<br>Me</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openLetter() {
+            document.getElementById('card').classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
